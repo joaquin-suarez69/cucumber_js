@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/wdio config"
+    "test": "./node_modules/.bin/wdio ./wdio.conf.js",
+    "config": "./node_modules/.bin/wdio config"
   },
   "keywords": [],
   "author": "",
