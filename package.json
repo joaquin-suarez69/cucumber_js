@@ -4,16 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/wdio ./wdio.conf.js",
+    "config": "./node_modules/.bin/wdio config"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.5.0",
-    "@babel/polyfill": "^7.4.4",
-    "@babel/preset-env": "^7.5.0",
-    "@babel/register": "^7.4.4"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/register": "^7.9.0",
+    "@wdio/cli": "^6.1.12",
+    "@wdio/cucumber-framework": "^6.1.8",
+    "@wdio/local-runner": "^6.1.12",
+    "@wdio/selenium-standalone-service": "^6.0.16",
+    "@wdio/spec-reporter": "^6.1.12",
+    "@wdio/sync": "^6.1.8"
+  },
+  "dependencies": {
+    "webdriverio": "^6.1.12"
   }
 }
