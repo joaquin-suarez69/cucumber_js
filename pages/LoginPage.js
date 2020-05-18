@@ -11,6 +11,11 @@ class LoginPage{
     get botonSignIn(){
         return $("input[name='commit']");
     }
+
+    cargarUrlBase(){
+        browser.url("/");
+    }
+
     ingresarNombreUsuario(usuario){
         this.nombreUsuarioField.waitForDisplayed(5000);
         this.nombreUsuarioField.setValue(usuario);
@@ -20,7 +25,7 @@ class LoginPage{
         this.contrasenaField.waitForDisplayed(5000);
         this.contrasenaField.setValue(contrasena);
     }
-    hacerLogin (){
+    hacerClickEnBotonDeLogin (){
         this.botonSignIn.waitForDisplayed(5000);
         this.botonSignIn.click();
     }
