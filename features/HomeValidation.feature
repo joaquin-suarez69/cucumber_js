@@ -5,4 +5,4 @@ Feature: Validacion home
         When el usuario ingresa "gap-automation-test@mailinator.com" como usuario 
         Then ingresa "12345678" como contrasena 
         Then hago click en el boton de Sign in
-        Then la pagina de home es cargada
+        And la pagina de home es cargada

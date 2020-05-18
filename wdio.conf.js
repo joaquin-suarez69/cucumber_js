@@ -1,4 +1,5 @@
 exports.config = {
+    numFila:'0',
     //
     // ====================
     // Runner Configuration
